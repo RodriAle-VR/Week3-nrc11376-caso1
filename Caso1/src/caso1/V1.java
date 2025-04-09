@@ -52,7 +52,7 @@ public class V1 extends JFrame implements ActionListener {
 	 */
 	public V1() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 450, 355);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -111,13 +111,17 @@ public class V1 extends JFrame implements ActionListener {
 		}
 		{
 			scrollPane = new JScrollPane();
-			scrollPane.setBounds(10, 115, 391, 135);
+			scrollPane.setBounds(10, 156, 391, 135);
 			contentPane.add(scrollPane);
 			{
 				txtS = new JTextArea();
 				scrollPane.setViewportView(txtS);
 			}
 		}
+		
+		JButton btnBorrar = new JButton("Borrar");
+		btnBorrar.setBounds(128, 120, 177, 23);
+		contentPane.add(btnBorrar);
 	}
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnSumarDosReales) {
